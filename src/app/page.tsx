@@ -4,6 +4,8 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import ParticlesBackground from '@/components/ParticlesBackground';
+import ProjectsSection from '@/components/ProjectsSection';
+import CertificationsSection from '@/components/CertificationsSection';
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <div className="container mx-auto mt-4 px-6 md:px-12 py-4">
         <HeroSection />
         <AboutSection />
+        <ProjectsSection />
+        <CertificationsSection />
         <ContactSection />
       </div>
     </>
