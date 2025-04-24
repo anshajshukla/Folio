@@ -14,7 +14,7 @@ import ResumeSection from '@/components/ResumeSection';
 export default function Home() {
   return (
     <>
-      <FrameworkLogosBackground />
+      {/* Background components */}
       <ParticlesBackground />
       <Navbar />
       <div className="container mx-auto mt-4 px-6 md:px-12 py-4">

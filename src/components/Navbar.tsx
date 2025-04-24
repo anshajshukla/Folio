@@ -29,8 +29,9 @@ const Navbar: React.FC = () => {
     }`}>
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
-        <Link href="/" className="text-white text-3xl font-semibold">
-          AK
+        <Link href="/" className="text-white text-xl md:text-2xl font-bold flex items-center">
+          <span className="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">Anshaj Shukla</span>
+          <span className="text-gray-400 ml-2 text-sm md:text-base">| ML Engineer</span>
         </Link>
 
         {/* Mobile menu button */}
