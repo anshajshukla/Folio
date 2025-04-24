@@ -1,6 +1,9 @@
+import React from 'react';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import FrameworkLogosBackground from '@/components/FrameworkLogosBackground';
+import ParticlesBackground from '@/components/ParticlesBackground';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#121212] antialiased overflow-x-hidden`}>
-        <main className="flex min-h-screen flex-col bg-[#121212]">
+        {/* 3D and particle backgrounds */}
+        <FrameworkLogosBackground />
+        <ParticlesBackground />
+        <main className="flex min-h-screen flex-col">
           {children}
         </main>
       </body>

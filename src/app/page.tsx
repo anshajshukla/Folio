@@ -6,10 +6,13 @@ import ContactSection from '@/components/ContactSection';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import ProjectsSection from '@/components/ProjectsSection';
 import CertificationsSection from '@/components/CertificationsSection';
+import FrameworkLogosBackground from '@/components/FrameworkLogosBackground';
+import ResumeSection from '@/components/ResumeSection';
 
 export default function Home() {
   return (
     <>
+      <FrameworkLogosBackground />
       <ParticlesBackground />
       <Navbar />
       <div className="container mx-auto mt-4 px-6 md:px-12 py-4">
@@ -17,6 +20,7 @@ export default function Home() {
         <AboutSection />
         <ProjectsSection />
         <CertificationsSection />
+        <ResumeSection />
         <ContactSection />
       </div>
     </>
