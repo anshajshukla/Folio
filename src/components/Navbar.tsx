@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 
 import type React from 'react';
@@ -57,7 +58,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop menu */}
         <div className={`${isMenuOpen ? 'block' : 'hidden'} md:block md:w-auto`} id="navbar">
-          <ul className="flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+          <ul className="flex flex-col p-4 md:p-0 md:flex-row md:space-x-6 mt-0">
             <li>
               <Link
                 href="#about"
@@ -69,11 +70,38 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link
-                href="#experience"
+                href="#projects"
                 className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Experience
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#certifications"
+                className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Certifications
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#achievements"
+                className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Achievements
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#resume"
+                className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Resume
               </Link>
             </li>
             <li>

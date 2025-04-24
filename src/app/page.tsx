@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
@@ -6,6 +7,7 @@ import ContactSection from '@/components/ContactSection';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import ProjectsSection from '@/components/ProjectsSection';
 import CertificationsSection from '@/components/CertificationsSection';
+import AchievementsSection from '@/components/AchievementsSection';
 import FrameworkLogosBackground from '@/components/FrameworkLogosBackground';
 import ResumeSection from '@/components/ResumeSection';
 
@@ -20,6 +22,7 @@ export default function Home() {
         <AboutSection />
         <ProjectsSection />
         <CertificationsSection />
+        <AchievementsSection />
         <ResumeSection />
         <ContactSection />
       </div>

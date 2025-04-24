@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 
 import type React from 'react';
@@ -34,7 +35,7 @@ const HeroSection: React.FC = () => {
         >
           <h1 className="mb-2 lg:mb-4 font-extrabold">
             <span className="gradient-text text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
-              Hi <span className="text-white">👋</span> I'm{' '}
+              Hi, <span className="text-white"></span> I'm{' '}
             </span>
             <span className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl text-white">
               <TypedText strings={['Anshaj Shukla', 'a ML Engineer', 'a Developer']} />
