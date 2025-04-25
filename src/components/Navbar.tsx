@@ -107,7 +107,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <a
-                href="/Anshaj_Shukla_CV.pdf"
+                href="https://drive.google.com/uc?export=download&id=1lDgDzGK07w1MHIHZ_ZO9tBpUNx5JGDcV"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block py-2 pl-3 pr-4 text-blue-400 sm:text-xl rounded md:p-0 hover:text-blue-300"

@@ -52,9 +52,9 @@ function ContactSection() {
   });
   
   // EmailJS configuration
-  const serviceId = 'service_portfolio'; // Replace with your EmailJS service ID
-  const templateId = 'template_contact'; // Replace with your EmailJS template ID
-  const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+  const serviceId = 'service_ifsa2rw'; // Replace with your EmailJS service ID
+  const templateId = 'template_rbve28c'; // Replace with your EmailJS template ID
+  const publicKey = 'YxzIFEBM451_hdUcQ'; // Replace with your EmailJS public key
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
