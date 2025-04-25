@@ -16,7 +16,7 @@ const ResumeSection: React.FC = () => {
     threshold: 0.1
   });
   
-  const cvLink = "https://drive.google.com/file/d/1lDgDzGK07w1MHIHZ_ZO9tBpUNx5JGDcV/view?usp=drive_link";
+  const cvLink = "C:\Users\ansha\OneDrive\Desktop\Folio\src\components\\12215469_AnshajShukla.pdf";
   const cvDownloadLink = "https://drive.google.com/uc?export=download&id=1lDgDzGK07w1MHIHZ_ZO9tBpUNx5JGDcV";
   
   const handleZoomIn = () => {
@@ -101,47 +101,7 @@ const ResumeSection: React.FC = () => {
             </div>
           </motion.div>
         </div>
-        
-        <div className="flex justify-center gap-4 mb-12">
-          <motion.a
-            href={cvLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold flex items-center gap-2 shadow-lg shadow-blue-500/10 hover:shadow-blue-500/20 transition-all duration-300"
-            whileHover={{ y: -5, scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-              <line x1="10" y1="9" x2="8" y2="9"/>
-            </svg>
-            View Full Resume
-            <motion.span
-              animate={isHovered ? { x: [0, 5, 0] } : { x: 0 }}
-              transition={{ repeat: isHovered ? Infinity : 0, duration: 1 }}
-            >
-              →
-            </motion.span>
-          </motion.a>
-          
-          <motion.a 
-            href="mailto:contact@anshaj.com" 
-            className="px-8 py-4 rounded-lg border border-blue-500 text-blue-400 font-bold flex items-center gap-2 transition-all duration-300 hover:bg-blue-500/10"
-            whileHover={{ y: -5, scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            Contact Me
-          </motion.a>
-        </div>
+      
         
         <motion.div 
           className={`mt-8 rounded-xl shadow-xl ${isPdfFullscreen ? 'fixed inset-0 z-50 bg-black/90 rounded-none p-4' : 'relative'}`}

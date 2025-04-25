@@ -23,9 +23,9 @@ export default function AchievementsSection() {
   const achievements: Achievement[] = [
     {
       id: 'achieve-1',
-      title: 'Kaggle Competition Top 5%',
-      description: 'Ranked in the top 5% globally in the Kaggle House Prices Advanced Regression Techniques competition.',
-      year: '2023',
+      title: 'Final Round SIH',
+      description: 'Selected as one of the top 30 teams among 600+ teams at Intra-university level',
+      year: '2024',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -34,9 +34,9 @@ export default function AchievementsSection() {
     },
     {
       id: 'achieve-2',
-      title: 'AWS DeepRacer Championship',
-      description: 'Finished 3rd place in the national AWS DeepRacer Championship using reinforcement learning.',
-      year: '2022',
+      title: 'Top 30 in Regional Mathematical Olympiad',
+      description: 'Placed in top 0.03% of participants in Regional Mathematical Olympiad',
+      year: '2018',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
@@ -45,23 +45,11 @@ export default function AchievementsSection() {
     },
     {
       id: 'achieve-3',
-      title: 'Research Publication',
-      description: 'Published research on computer vision techniques in the International Journal of Computer Applications.',
-      year: '2023',
+      title: 'Dean top 10% students at the University',
+      description: 'Awarded for good academic performance and extracurricular activites at the university',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-        </svg>
-      )
-    },
-    {
-      id: 'achieve-4',
-      title: 'Hackathon Winner',
-      description: 'First place in the University ML Hackathon for developing a real-time emotion recognition system.',
-      year: '2021',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
         </svg>
       )
     },

@@ -57,26 +57,20 @@ export default function CertificationsSection() {
     {
       title: 'Programming & Algorithms: Complete Interview Preparation - Self-Paced (Java & DSA)',
       issuer: 'GeeksForGeeks',
-      date: 'May 2023',
-      url: 'https://www.geeksforgeeks.org/courses/dsa-self-paced',
+      date: 'October 2024',
+      url: 'https://media.geeksforgeeks.org/courses/certificates/f7036d71cda2023118ffc90a43cd076a.pdf'
     },
     {
-      title: 'C++ & Data Structures/Algorithms',
-      issuer: 'Coding Ninja',
-      date: 'January 2022',
-      url: 'https://www.codingninjas.com/',
+      title: 'Machine Learning / RL ',
+      issuer: 'IIT-Kharagpur (NPTEL)',
+      date: 'August 2024',
+      url: 'https://nptel.ac.in/noc/E_Certificate/NPTEL24CS81S33730002502639453',
     },
     {
-      title: 'Machine Learning Specialization',
-      issuer: 'Coursera',
-      date: 'August 2023',
-      url: 'https://www.coursera.org/specializations/machine-learning-introduction',
-    },
-    {
-      title: 'Deep Learning Specialization',
-      issuer: 'Coursera',
-      date: 'November 2023',
-      url: 'https://www.coursera.org/specializations/deep-learning',
+      title: 'Generative AI with LLM',
+      issuer: 'DeepLearning.AI',
+      date: 'March 2024',
+      url: 'https://coursera.org/verify/R64M6AEHGR9A',
     },
     {
       title: 'IBM Data Science Specialization',
@@ -87,8 +81,14 @@ export default function CertificationsSection() {
     {
       title: 'Probability and Statistics',
       issuer: 'IIT Madras (NPTEL)',
-      date: 'March 2023',
-      url: 'https://nptel.ac.in/courses/111106131',
+      date: 'October 2023',
+      url: 'https://nptel.ac.in/noc/E_Certificate/NPTEL23MA77S73790005820098467',
+    },
+    {
+      title: 'C++ & Data Structures/Algorithms',
+      issuer: 'Coding Ninja',
+      date: 'September 2023',
+      url: 'https://certificate.codingninjas.com/verify/03f5b39b0a2db0ad',
     }
   ];
 

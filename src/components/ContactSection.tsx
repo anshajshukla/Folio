@@ -148,7 +148,7 @@ function ContactSection() {
                   />
                 </svg>
                 <span className="text-gray-300">
-                  Location: Bangalore, India
+                  Location: Delhi, India
                 </span>
               </div>
 
@@ -233,47 +233,6 @@ function ContactSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex flex-col justify-between"
             >
-              <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 p-8 rounded-xl shadow-xl border border-slate-700/60 mb-8">
-                <h3 className="text-2xl font-bold mb-6 pb-2 border-b border-slate-700 inline-block text-white">Get In Touch</h3>
-
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 rounded-full bg-blue-500/10 text-blue-400">
-                      <EmailIcon className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-400">Email</p>
-                      <a href="mailto:anshajshukla@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors font-medium">
-                        anshajshukla@gmail.com
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 rounded-full bg-blue-500/10 text-blue-400">
-                      <LinkedInIcon className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-400">LinkedIn</p>
-                      <a href="https://www.linkedin.com/in/anshajshukla/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors font-medium">
-                        linkedin.com/in/anshajshukla
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 rounded-full bg-blue-500/10 text-blue-400">
-                      <GitHubIcon className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-400">GitHub</p>
-                      <a href="https://github.com/anshajshukla" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors font-medium">
-                        github.com/anshajshukla
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 p-8 rounded-xl shadow-xl border border-slate-700/60">
                 <h3 className="text-xl font-bold mb-4 text-white">Response Time</h3>

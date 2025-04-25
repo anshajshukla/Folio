@@ -82,7 +82,7 @@ const HeroSection: React.FC = () => {
             </motion.div>
             
             <AnimatedText 
-              text="Anshaj Shukla" 
+              text="Hi, I'm Anshaj" 
               className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-none text-white" 
               delay={0.2} 
             />
@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="h-16"
             >
-              <TypedText texts={["Machine Learning Engineer", "Data Scientist", "Python Developer"]} />
+              <TypedText texts={["Aspiring AI Engineer", "GEN AI Enthusiast", "Python Developer"]} />
             </motion.div>
             
             <motion.p 
@@ -141,8 +141,8 @@ const HeroSection: React.FC = () => {
               className="flex items-center gap-6 mt-8"
             >
               <a 
-                href="https://www.linkedin.com/in/anshaj-shukla-a53b98218/" 
-                target="_blank" 
+                href="https://www.linkedin.com/in/anshajshukla/" 
+                target="_new" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-500 transition-colors"
               >
@@ -150,7 +150,7 @@ const HeroSection: React.FC = () => {
               </a>
               <a 
                 href="https://github.com/anshajshukla" 
-                target="_blank" 
+                target="_new" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >

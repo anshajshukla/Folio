@@ -26,7 +26,6 @@ const AboutSection = () => {
     { name: "Python", link: "https://www.python.org/" },
     { name: "TensorFlow", link: "https://www.tensorflow.org/" },
     { name: "AWS", link: "https://aws.amazon.com/" },
-    { name: "Docker", link: "https://www.docker.com/" },
   ];
   
   // Core skills

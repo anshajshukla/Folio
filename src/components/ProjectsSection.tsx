@@ -25,44 +25,35 @@ const ProjectsSection: React.FC = () => {
   const projects: ProjectItemProps[] = [
     {
       id: 'project-1',
-      title: 'Electric Load Forecasting',
+      title: 'Traffic Violation Detection System',
       description: [
-        'Engineered a hybrid LSTM-GRU + GNN model achieving 97.3% accuracy for electric load prediction, a 7% improvement over standard methods.',
-        'Implemented data preprocessing pipeline for time-series electrical data.'
+        'Architected an end-to-end real-time traffic violation detection and vehicle classification using YOLO A10 and Google Gemini.',
+        'Leveraged Google Gemini for semantic analysis, enabling accurate license plate recognition and vehicle brand classification.'
       ],
-      technologies: ['Python', 'PyTorch', 'Deep Learning', 'Graph Neural Networks'],
-      githubUrl: 'https://github.com/anshajshukla/load-forecasting',
+      technologies: ['Python', 'YOLO A10', 'Google Gemini', 'Computer Vision', 'Deep Learning'],
+      githubUrl: 'https://github.com/anshajshukla/Traffic-Management-System/tree/main',
     },
     {
       id: 'project-2',
-      title: 'Bitcoin Price Prediction',
+      title: 'NewDelhi Load Forecasting',
       description: [
-        'Developed a multi-factor model for Bitcoin price analysis with Twitter sentiment and market data.',
-        'Improved prediction accuracy by 20% compared to baseline models.'
+        'Engineered a hybrid LSTM-GRU + GNN model achieving 97.3% accuracy for electric load prediction',
+        '7% improvement over standard methods',
+        'Implemented data preprocessing pipeline for time-series electrical data',
+        'Reduced prediction error by 15% compared to traditional forecasting methods',
       ],
-      technologies: ['Python', 'NLP', 'Machine Learning', 'Sentiment Analysis'],
-      githubUrl: 'https://github.com/anshajshukla/bitcoin-prediction',
+      technologies: ['Python', 'PyTorch', 'Deep Learning', 'GRU+GNN'],
+      githubUrl: 'https://github.com/anshajshukla/load-forecasting',
     },
     {
       id: 'project-3',
-      title: 'Weather App with ML Forecasting',
+      title: 'Bitcoin Price Prediction',
       description: [
-        'Built a real-time weather application with machine learning enhanced forecasting.',
-        'Integrated multiple weather APIs and implemented custom prediction algorithms.'
+        'Developed an ensemble model combining LSTM, Fb-Prophet, SARIMA',
+        'Boostging Prediction accuracy by 20% over traditional ARIMA Models',
       ],
-      technologies: ['JavaScript', 'React', 'Node.js', 'API Integration'],
-      githubUrl: 'https://github.com/anshajshukla/weather-ml-app',
-      liveUrl: 'https://weather-ml-app.example.com',
-    },
-    {
-      id: 'project-4',
-      title: 'Healthcare Analytics Dashboard',
-      description: [
-        'Designed an interactive dashboard for healthcare data visualization.',
-        'Implemented statistical analysis tools and predictive patient outcome models.'
-      ],
-      technologies: ['Python', 'R', 'Tableau', 'Statistical Modeling'],
-      githubUrl: 'https://github.com/anshajshukla/healthcare-analytics',
+      technologies: ['Python', 'Machine Learning', 'Fb-Prohpet','Time-Series Analysis'],
+      githubUrl: 'https://github.com/anshajshukla/bitcoin-price-forecasting-using-prophet',
     },
   ];
 
