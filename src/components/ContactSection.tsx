@@ -1,9 +1,10 @@
 // @ts-nocheck
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import emailjs from '@emailjs/browser';
 
 // Icon components
 function EmailIcon() {
@@ -38,10 +39,22 @@ function ContactSection() {
     message: '',
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    success?: boolean;
+    message?: string;
+  }>({});
+  
+  const formRef = useRef<HTMLFormElement>(null);
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+  
+  // EmailJS configuration
+  const serviceId = 'service_portfolio'; // Replace with your EmailJS service ID
+  const templateId = 'template_contact'; // Replace with your EmailJS template ID
+  const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -55,14 +68,52 @@ function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // This would normally send the form data to a server
-    console.log('Form submitted:', formData);
-    alert('Message sent! (Demo only - no data is actually sent)');
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
+    
+    if (!formData.name || !formData.email || !formData.message) {
+      setSubmitStatus({
+        success: false,
+        message: 'Please fill in all required fields.'
+      });
+      return;
+    }
+    
+    setIsSubmitting(true);
+    setSubmitStatus({});
+    
+    // Using EmailJS to send the form
+    emailjs.send(
+      serviceId,
+      templateId,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      publicKey
+    )
+    .then((result) => {
+      console.log('Email sent successfully:', result.text);
+      setSubmitStatus({
+        success: true,
+        message: 'Your message has been sent successfully!'
+      });
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+    })
+    .catch((error) => {
+      console.error('Email sending failed:', error);
+      setSubmitStatus({
+        success: false,
+        message: 'Failed to send message. Please try again later.'
+      });
+    })
+    .finally(() => {
+      setIsSubmitting(false);
     });
   };
 
@@ -103,8 +154,8 @@ function ContactSection() {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <a href="mailto:contact@anshaj.com" className="text-gray-300 hover:text-white">
-                  Email: contact@anshaj.com
+                <a href="mailto:anshajshukla@gmail.com" className="text-gray-300 hover:text-white transition-colors duration-300">
+                  Email: anshajshukla@gmail.com
                 </a>
               </div>
               <div className="flex items-center mb-3">
@@ -152,7 +203,7 @@ function ContactSection() {
                 </span>
               </div>
 
-              <form className="mt-8 space-y-4">
+              <form ref={formRef} className="mt-8 space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-gray-400 text-sm font-medium mb-2">
                     Name
@@ -214,15 +265,33 @@ function ContactSection() {
                   ></textarea>
                 </div>
 
+                {submitStatus.message && (
+                  <div className={`p-3 rounded-lg text-center ${submitStatus.success ? 'bg-green-500/10 text-green-400 border border-green-500/30' : 'bg-red-500/10 text-red-400 border border-red-500/30'}`}>
+                    {submitStatus.message}
+                  </div>
+                )}
+                
                 <button
                   type="submit"
                   className="w-full py-3 px-6 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/20 flex items-center justify-center gap-2"
-                  onClick={handleSubmit}
+                  disabled={isSubmitting}
                 >
-                  <span>Send Message</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11h4a1 1 0 00.943-1.332l-3-7z" />
-                  </svg>
+                  {isSubmitting ? (
+                    <>
+                      <span>Sending...</span>
+                      <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                    </>
+                  ) : (
+                    <>
+                      <span>Send Message</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11h4a1 1 0 00.943-1.332l-3-7z" />
+                      </svg>
+                    </>
+                  )}
                 </button>
               </form>
             </div>

@@ -4,6 +4,14 @@ const nextConfig = {
   distDir: 'out',
   // Ensure the app builds correctly with proper 404 handling
   trailingSlash: true,
+  // Prevent symlink issues
+  skipTrailingSlashRedirect: true,
+  // Avoid symbolic links in the output directory
+  experimental: {
+    outputFileTracingExcludes: {
+      '*': ['node_modules/**/*']
+    },
+  },
   images: {
     unoptimized: true,
     domains: [
