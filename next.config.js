@@ -2,6 +2,8 @@
 const nextConfig = {
   output: 'export',
   distDir: 'out',
+  // Ensure the app builds correctly with proper 404 handling
+  trailingSlash: true,
   images: {
     unoptimized: true,
     domains: [

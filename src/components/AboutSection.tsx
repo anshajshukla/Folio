@@ -26,6 +26,10 @@ const AboutSection = () => {
     { name: "Python", link: "https://www.python.org/" },
     { name: "TensorFlow", link: "https://www.tensorflow.org/" },
     { name: "AWS", link: "https://aws.amazon.com/" },
+    { name: "Stable Diffusion"},
+    { name: "Agentic AI"},
+    { name: "GEN AI"},
+
   ];
   
   // Core skills
@@ -64,15 +68,24 @@ const AboutSection = () => {
                 <h4 className="text-xl font-semibold text-white mb-3">Technical Expertise</h4>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {skills.map((skill, index) => (
-                    <Link 
-                      key={index}
-                      href={skill.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-full bg-slate-800 hover:bg-blue-900/30 border border-blue-500/30 text-blue-300 transition-colors duration-300 hover:text-blue-200"
-                    >
-                      {skill.name}
-                    </Link>
+                    skill.link ? (
+                      <Link 
+                        key={index}
+                        href={skill.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 rounded-full bg-slate-800 hover:bg-blue-900/30 border border-blue-500/30 text-blue-300 transition-colors duration-300 hover:text-blue-200"
+                      >
+                        {skill.name}
+                      </Link>
+                    ) : (
+                      <span
+                        key={index}
+                        className="px-4 py-2 rounded-full bg-slate-800 border border-blue-500/30 text-blue-300"
+                      >
+                        {skill.name}
+                      </span>
+                    )
                   ))}
                 </div>
               </div>
@@ -81,13 +94,22 @@ const AboutSection = () => {
                 <h4 className="text-xl font-semibold text-white mb-3">Core Skills</h4>
                 <div className="flex flex-wrap gap-2">
                   {coreSkills.map((skill, index) => (
-                    <Link 
-                      key={index}
-                      href={skill.link}
-                      className="px-4 py-2 rounded-full bg-slate-800 hover:bg-purple-900/30 border border-purple-500/30 text-purple-300 transition-colors duration-300 hover:text-purple-200"
-                    >
-                      {skill.name}
-                    </Link>
+                    skill.link ? (
+                      <Link 
+                        key={index}
+                        href={skill.link}
+                        className="px-4 py-2 rounded-full bg-slate-800 hover:bg-purple-900/30 border border-purple-500/30 text-purple-300 transition-colors duration-300 hover:text-purple-200"
+                      >
+                        {skill.name}
+                      </Link>
+                    ) : (
+                      <span
+                        key={index}
+                        className="px-4 py-2 rounded-full bg-slate-800 border border-purple-500/30 text-purple-300"
+                      >
+                        {skill.name}
+                      </span>
+                    )
                   ))}
                 </div>
               </div>

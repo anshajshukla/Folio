@@ -106,6 +106,17 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li>
+              <a
+                href="/Anshaj_Shukla_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block py-2 pl-3 pr-4 text-blue-400 sm:text-xl rounded md:p-0 hover:text-blue-300"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Download CV
+              </a>
+            </li>
+            <li>
               <Link
                 href="#contact"
                 className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"

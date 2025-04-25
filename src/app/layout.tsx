@@ -1,10 +1,31 @@
 // @ts-nocheck
 import React from 'react';
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// Using local system font as fallback to avoid Google Fonts download errors
+const inter = localFont({
+  src: [
+    {
+      path: '../fonts/Inter-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Inter-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Inter-SemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    }
+  ],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   title: "Anshaj Shukla | ML Engineer & Developer",
@@ -24,7 +45,7 @@ export const metadata: Metadata = {
     title: 'Anshaj Shukla | ML Engineer & Developer',
     description: 'Portfolio of Anshaj Shukla - Specializing in Machine Learning, Data Science, and Software Development',
     siteName: 'Anshaj Shukla Portfolio',
-    images: [{ url: '/og-imcage.jpg' }],
+    images: [{ url: '/og-image.jpg' }],
   },
 };
 
