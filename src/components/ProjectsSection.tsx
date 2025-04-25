@@ -55,6 +55,16 @@ const ProjectsSection: React.FC = () => {
       technologies: ['Python', 'Machine Learning', 'Fb-Prohpet','Time-Series Analysis'],
       githubUrl: 'https://github.com/anshajshukla/bitcoin-price-forecasting-using-prophet',
     },
+    {
+      id: 'Stable Diffusion basics',
+      title: 'Stable Diffusion WebUI on Google Colab',
+      description: [
+        'Deployed a Stable Diffusion web UI on Google Colab for generating images from text prompts and image inputs.',
+        'Enabled customization of image generation process via a user-friendly interface leveraging various models, LoRAs, and ControlNets.'
+      ],
+      technologies: ['Python', 'Google Colab', 'Stable Diffusion', 'ComfyUI', 'Deep Learning', 'Computer Vision'],
+      githubUrl: 'https://github.com/anshajshukla/StableDiffusion'
+    },
   ];
 
   return (
