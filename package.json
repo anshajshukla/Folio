@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "export": "next export",
     "clean": "node clean-build.js",
     "dev": "node clean-build.js && next dev",
     "build": "node clean-build.js && next build",
