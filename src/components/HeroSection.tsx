@@ -78,7 +78,7 @@ const HeroSection: React.FC = () => {
               className="inline-flex items-center px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-4"
             >
               <span className="mr-2 h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
-              Available for collaboration
+              SWE Intern @ Cashfree Payments
             </motion.div>
             
             <AnimatedText 
@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="h-16"
             >
-              <TypedText texts={["Aspiring AI Engineer", "GEN AI Enthusiast", "Python Developer"]} />
+              <TypedText texts={["Software Engineer", "Payment Infrastructure", "DevOps & Cloud Engineer"]} />
             </motion.div>
             
             <motion.p 
@@ -102,7 +102,7 @@ const HeroSection: React.FC = () => {
               transition={{ delay: 1, duration: 0.6 }}
               className="mt-6 text-lg sm:text-xl text-gray-300 max-w-xl leading-relaxed backdrop-blur-sm bg-black/20 p-4 rounded-xl border border-white/5 shadow-lg"
             >
-              Creating intelligent solutions at the intersection of machine learning and software engineering. Transforming complex data into meaningful insights and powerful applications.
+              Building reliable, secure payment infrastructure at Cashfree Payments. I design production systems end to end, from routing and CI/CD to monitoring and incident response.
             </motion.p>
 
             <motion.div 

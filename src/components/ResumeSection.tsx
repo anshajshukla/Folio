@@ -16,8 +16,7 @@ const ResumeSection: React.FC = () => {
     threshold: 0.1
   });
   
-  const cvLink = "C:\Users\ansha\OneDrive\Desktop\Folio\src\components\\12215469_AnshajShukla.pdf";
-  const cvDownloadLink = "https://drive.google.com/uc?export=download&id=1lDgDzGK07w1MHIHZ_ZO9tBpUNx5JGDcV";
+  const cvLink = "/Anshaj_Shukla_Resume.pdf";
   
   const handleZoomIn = () => {
     if (zoomLevel < 200) {
@@ -64,19 +63,19 @@ const ResumeSection: React.FC = () => {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-1">▹</span>
-                <span>Machine Learning & Data Science</span>
+                <span>SWE Intern, Payment Infrastructure — Cashfree Payments</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-1">▹</span>
-                <span>Python, TensorFlow, PyTorch</span>
+                <span>Python, Java, C++, SQL, Bash</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-1">▹</span>
-                <span>Web Development with React & Next.js</span>
+                <span>Docker, Kubernetes, AWS, GitHub Actions</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-1">▹</span>
-                <span>Data Analysis & Visualization</span>
+                <span>FastAPI, Spring Boot, Microservices, System Design</span>
               </li>
             </ul>
           </motion.div>
@@ -92,11 +91,11 @@ const ResumeSection: React.FC = () => {
               <div>
                 <h4 className="text-lg font-semibold">Bachelor of Technology</h4>
                 <p className="text-blue-400">Computer Science & Engineering</p>
-                <p className="text-gray-400 text-sm">CGPA: 8.87</p>
+                <p className="text-gray-400 text-sm">Lovely Professional University · 2022 – 2026 · CGPA: 8.67</p>
               </div>
               <div>
                 <h4 className="text-lg font-semibold">Certifications</h4>
-                <p className="text-gray-300">ML Specialization, Data Science, Algorithms</p>
+                <p className="text-gray-300">Cloud Computing & Intro to ML (NPTEL, IIT Kharagpur)</p>
               </div>
             </div>
           </motion.div>
@@ -140,7 +139,7 @@ const ResumeSection: React.FC = () => {
             
             <div className="flex items-center gap-2">
               <motion.a
-                href={cvDownloadLink}
+                href={cvLink}
                 download="Anshaj_Shukla_Resume.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -189,7 +188,7 @@ const ResumeSection: React.FC = () => {
           <div className="overflow-hidden bg-slate-900 rounded-b-xl" style={{ height: isPdfFullscreen ? 'calc(100vh - 120px)' : '600px' }}>
             <iframe 
               ref={iframeRef}
-              src="https://drive.google.com/file/d/1lDgDzGK07w1MHIHZ_ZO9tBpUNx5JGDcV/preview" 
+              src={cvLink} 
               width="100%" 
               height="100%" 
               className="border-none transform-gpu" 

@@ -28,8 +28,8 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Anshaj Shukla | ML Engineer & Developer",
-  description: "Portfolio of Anshaj Shukla - Specializing in Machine Learning, Data Science, and Software Development",
+  title: "Anshaj Shukla | Software Engineer",
+  description: "Portfolio of Anshaj Shukla - Software Engineer working on payment infrastructure, backend systems, and DevOps",
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://anshajshukla.com',
-    title: 'Anshaj Shukla | ML Engineer & Developer',
-    description: 'Portfolio of Anshaj Shukla - Specializing in Machine Learning, Data Science, and Software Development',
+    title: 'Anshaj Shukla | Software Engineer',
+    description: 'Portfolio of Anshaj Shukla - Software Engineer working on payment infrastructure, backend systems, and DevOps',
     siteName: 'Anshaj Shukla Portfolio',
     images: [{ url: '/og-image.jpg' }],
   },

@@ -21,22 +21,32 @@ const AboutSection = () => {
   
   // Skill items with links
   const skills = [
-    { name: "Machine Learning", link: "https://www.tensorflow.org/" },
-    { name: "Data Science", link: "https://scikit-learn.org/" },
     { name: "Python", link: "https://www.python.org/" },
-    { name: "TensorFlow", link: "https://www.tensorflow.org/" },
-    { name: "AWS", link: "https://aws.amazon.com/" },
-    { name: "Stable Diffusion"},
-    { name: "Agentic AI"},
-    { name: "GEN AI"},
-
+    { name: "Java" },
+    { name: "C++" },
+    { name: "Bash" },
+    { name: "SQL" },
+    { name: "Docker", link: "https://www.docker.com/" },
+    { name: "Kubernetes", link: "https://kubernetes.io/" },
+    { name: "AWS (EC2, S3, Lambda, EKS)", link: "https://aws.amazon.com/" },
+    { name: "GitHub Actions" },
+    { name: "FastAPI", link: "https://fastapi.tiangolo.com/" },
+    { name: "Flask" },
+    { name: "Spring Boot" },
+    { name: "Prometheus & Grafana" },
+    { name: "MySQL" },
+    { name: "PostgreSQL" },
+    { name: "MongoDB" },
   ];
   
   // Core skills
   const coreSkills = [
-    { name: "Data Structures & Algorithms", link: "#projects" },
-    { name: "Probability & Statistics", link: "#projects" },
-    { name: "OOPS", link: "#projects" },
+    { name: "System Design" },
+    { name: "Microservices & REST APIs" },
+    { name: "CI/CD & Deployment Automation" },
+    { name: "Security Scanning & Incident Response" },
+    { name: "ETL Pipelines" },
+    { name: "Data Structures & Algorithms" },
   ];
 
   return (
@@ -62,7 +72,7 @@ const AboutSection = () => {
           >
             <motion.div variants={item} className="text-gray-300">
               <h3 className="text-2xl font-bold text-white mb-4 pb-2 border-b border-slate-700 inline-block">My Background</h3>
-              <p className="mb-4">I'm a machine learning engineer and data scientist specializing in creating intelligent solutions that solve real-world problems. With a strong foundation in computer science and mathematics, I build systems that extract meaningful insights from complex data.</p>
+              <p className="mb-4">I'm a software engineer focused on backend systems and infrastructure. I'm currently a Software Engineer Intern on the Payment Infrastructure team at Cashfree Payments in Bengaluru, working on payment routing, security hardening and production reliability for systems that handle millions of transactions. I enjoy owning systems end to end, from design through deployment, monitoring and incident response.</p>
               
               <div className="mb-8">
                 <h4 className="text-xl font-semibold text-white mb-3">Technical Expertise</h4>
@@ -119,8 +129,9 @@ const AboutSection = () => {
                 <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700/50">
                   <h5 className="font-bold text-white">Lovely Professional University</h5>
                   <p className="text-blue-300">Bachelor of Technology in Computer Science and Engineering</p>
+                  <p className="text-gray-400 text-sm">Punjab · Sep 2022 – 2026</p>
                   <div className="mt-2 inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-sm font-medium">
-                    CGPA: 8.87
+                    CGPA: 8.67
                   </div>
                 </div>
               </div>

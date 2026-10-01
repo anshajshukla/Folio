@@ -36,6 +36,7 @@ const CertificationCard: React.FC<CertificationProps> = ({ title, issuer, date, 
         </div>
       </div>
       
+      {url && (
       <a 
         href={url} 
         target="_blank" 
@@ -48,6 +49,7 @@ const CertificationCard: React.FC<CertificationProps> = ({ title, issuer, date, 
         </svg>
         View Certificate
       </a>
+      )}
     </div>
   );
 };
@@ -55,14 +57,20 @@ const CertificationCard: React.FC<CertificationProps> = ({ title, issuer, date, 
 export default function CertificationsSection() {
   const certifications: CertificationProps[] = [
     {
+      title: 'Cloud Computing (Elite)',
+      issuer: 'IIT Kharagpur (NPTEL)',
+      date: '2024',
+      url: '',
+    },
+    {
       title: 'Programming & Algorithms: Complete Interview Preparation - Self-Paced (Java & DSA)',
       issuer: 'GeeksForGeeks',
       date: 'October 2024',
       url: 'https://media.geeksforgeeks.org/courses/certificates/f7036d71cda2023118ffc90a43cd076a.pdf'
     },
     {
-      title: 'Machine Learning / RL ',
-      issuer: 'IIT-Kharagpur (NPTEL)',
+      title: 'Introduction to Machine Learning (Elite + Silver)',
+      issuer: 'IIT Kharagpur (NPTEL)',
       date: 'August 2024',
       url: 'https://nptel.ac.in/noc/E_Certificate/NPTEL24CS81S33730002502639453',
     },

@@ -24,6 +24,24 @@ const ProjectsSection: React.FC = () => {
 
   const projects: ProjectItemProps[] = [
     {
+      id: 'project-cicd',
+      title: 'Automated Testing Infrastructure — CI/CD Pipeline',
+      description: [
+        'Built an end-to-end CI/CD automation system orchestrating 4 production microservices; achieved 95% system test coverage with complete audit trail logging and compliance monitoring.',
+        'Implemented automated evaluation and feedback capture pipelines, reducing manual operational overhead by 60% while maintaining compliance for payment-regulated workflows.',
+      ],
+      technologies: ['Python', 'Selenium', 'FastAPI', 'Docker', 'GitHub Actions', 'CI/CD'],
+    },
+    {
+      id: 'project-api',
+      title: 'Production API Infrastructure & Optimization',
+      description: [
+        'Optimized and operationalized production APIs serving high-scale workloads, cutting latency from 620ms to 310ms across 50,000+ requests through infrastructure-level improvements and caching.',
+        'Designed for production-grade reliability: model versioning, automated rollback, health monitoring, graceful degradation and fallback strategies.',
+      ],
+      technologies: ['Python', 'FastAPI', 'Docker', 'Kubernetes', 'AWS'],
+    },
+    {
       id: 'project-1',
       title: 'Traffic Violation Detection System',
       description: [
@@ -138,6 +156,7 @@ const ProjectsSection: React.FC = () => {
                   ))}
                 </div>
                 
+                {(project.githubUrl || project.liveUrl) && (
                 <div className="flex justify-end mt-6">
                   <div className="group relative overflow-hidden rounded-lg">
                     <a 
@@ -153,6 +172,7 @@ const ProjectsSection: React.FC = () => {
                     </a>
                   </div>
                 </div>
+                )}
               </div>
             </motion.div>
           ))}

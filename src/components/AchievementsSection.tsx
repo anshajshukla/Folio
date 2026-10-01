@@ -22,9 +22,15 @@ export default function AchievementsSection() {
 
   const achievements: Achievement[] = [
     {
+      id: 'achieve-guinness',
+      title: 'Guinness World Record',
+      description: 'Part of the Guinness World Record at Microsoft AI Fest for the largest simultaneous AI model demonstration',
+      year: '2025',
+    },
+    {
       id: 'achieve-1',
-      title: 'Final Round SIH',
-      description: 'Selected as one of the top 30 teams among 600+ teams at Intra-university level',
+      title: 'Finalist — Smart India Hackathon',
+      description: 'Finalist at Smart India Hackathon 2024, placing in the top 30 of 600+ teams',
       year: '2024',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,13 +51,18 @@ export default function AchievementsSection() {
     },
     {
       id: 'achieve-3',
-      title: 'Dean top 10% students at the University',
-      description: 'Awarded for good academic performance and extracurricular activites at the university',
+      title: "Dean's List",
+      description: 'Top 1% of the university cohort, recognised for excellence in core CS and mathematics courses',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
         </svg>
       )
+    },
+    {
+      id: 'achieve-cp',
+      title: 'Competitive Programming',
+      description: '1000+ problems solved; Codeforces rating 1235',
     },
   ];
 
@@ -88,9 +99,11 @@ export default function AchievementsSection() {
                   <div className="flex-grow">
                     <div className="flex justify-between items-center w-full">
                       <h3 className="text-2xl font-bold text-white">{achievement.title}</h3>
+                      {achievement.year && (
                       <span className="text-blue-300 px-3 py-1 bg-blue-900/20 rounded-full text-sm font-medium border border-blue-500/20">
                         {achievement.year}
                       </span>
+                      )}
                     </div>
                   </div>
                 </div>

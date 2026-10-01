@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <Link href="/" className="text-white text-xl md:text-2xl font-bold flex items-center">
           <span className="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">Anshaj Shukla</span>
-          <span className="text-gray-400 ml-2 text-sm md:text-base">| ML Engineer</span>
+          <span className="text-gray-400 ml-2 text-sm md:text-base">| Software Engineer</span>
         </Link>
 
         {/* Mobile menu button */}
@@ -67,6 +67,15 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#experience"
+                className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Experience
               </Link>
             </li>
             <li>
@@ -107,7 +116,8 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <a
-                href="https://drive.google.com/uc?export=download&id=1lDgDzGK07w1MHIHZ_ZO9tBpUNx5JGDcV"
+                href="/Anshaj_Shukla_Resume.pdf"
+                download="Anshaj_Shukla_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block py-2 pl-3 pr-4 text-blue-400 sm:text-xl rounded md:p-0 hover:text-blue-300"
