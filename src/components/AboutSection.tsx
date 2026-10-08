@@ -72,7 +72,7 @@ const AboutSection = () => {
           >
             <motion.div variants={item} className="text-gray-300">
               <h3 className="text-2xl font-bold text-white mb-4 pb-2 border-b border-slate-700 inline-block">My Background</h3>
-              <p className="mb-4">I'm a software engineer focused on backend systems and infrastructure. I'm currently a Software Engineer Intern on the Payment Infrastructure team at Cashfree Payments in Bengaluru, working on payment routing, security hardening and production reliability for systems that handle millions of transactions. I enjoy owning systems end to end, from design through deployment, monitoring and incident response.</p>
+              <p className="mb-4">I'm a software engineer focused on backend systems and infrastructure. I'm currently a Software Engineer on the Payment Infrastructure team at Cashfree Payments in Bengaluru, working on payment routing, security hardening and production reliability for systems that handle millions of transactions. I enjoy owning systems end to end, from design through deployment, monitoring and incident response.</p>
               
               <div className="mb-8">
                 <h4 className="text-xl font-semibold text-white mb-3">Technical Expertise</h4>

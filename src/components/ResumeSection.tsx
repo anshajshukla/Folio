@@ -63,7 +63,7 @@ const ResumeSection: React.FC = () => {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-1">▹</span>
-                <span>SWE Intern, Payment Infrastructure — Cashfree Payments</span>
+                <span>Software Engineer, Payment Infrastructure — Cashfree Payments</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-1">▹</span>

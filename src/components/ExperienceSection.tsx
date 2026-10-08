@@ -24,7 +24,7 @@ const ExperienceSection: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
       id: 'exp-cashfree',
-      role: 'Software Engineer Intern — Payment Infrastructure',
+      role: 'Software Engineer — Payment Infrastructure',
       company: 'Cashfree Payments',
       location: 'Bengaluru, India',
       period: 'Jan 2026 – Present',

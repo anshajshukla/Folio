@@ -78,7 +78,7 @@ const HeroSection: React.FC = () => {
               className="inline-flex items-center px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-4"
             >
               <span className="mr-2 h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
-              SWE Intern @ Cashfree Payments
+              Software Engineer @ Cashfree Payments
             </motion.div>
             
             <AnimatedText 
