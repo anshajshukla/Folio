@@ -27,7 +27,18 @@ const ExperienceSection: React.FC = () => {
       role: 'Software Engineer — Payment Infrastructure',
       company: 'Cashfree Payments',
       location: 'Bengaluru, India',
-      period: 'Jan 2026 – Present',
+      period: 'Jul 2026 – Present',
+      points: [
+        'Converted to a full-time role after my internship; continuing to build and run payment infrastructure on the same team.',
+      ],
+      technologies: ['Payments', 'System Design', 'Infrastructure'],
+    },
+    {
+      id: 'exp-cashfree-intern',
+      role: 'Software Engineer Intern — Payment Infrastructure',
+      company: 'Cashfree Payments',
+      location: 'Bengaluru, India',
+      period: 'Jan 2026 – Jul 2026',
       points: [
         'Designed and deployed a dynamic payment routing system across UPI, cards, netbanking and wallets with real-time gateway selection and intelligent fallback strategies; improved transaction success rate by 6% during peak load while maintaining 99.9% uptime.',
         'Reduced the payment infrastructure security vulnerability surface by 40% through automated CVE scanning, targeted patching and security policy enforcement across all production dependencies; implemented infrastructure-as-code compliance.',
